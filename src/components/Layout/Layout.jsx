@@ -35,10 +35,10 @@ const Layout = () => {
           </div>
 
           <div className={css.profile}>
-            <img src="./profile.png" alt="person image" />
+            <img src="./lenus.png" alt="person image" />
             <div className={css.details}>
-              <span>Denis Steven</span>
-              <span>devissteven@gmail.com</span>
+              <span>Lenus</span>
+              <span>kiloculturedavao@gmail.com</span>
             </div>
           </div>
 

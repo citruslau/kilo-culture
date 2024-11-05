@@ -3,29 +3,25 @@ import moment from "moment/moment";
 export const cardsData = [
   {
     title: "Revenue",
-    change: 24,
-    amount: 42056,
+    change: 24,  // Example change percentage
+    amount: 42056, // Example revenue amount
   },
   {
-    title: "Orders",
-    change: -14,
-    amount: 52125.03,
+    title: "Number of Members",
+    change: -14,  // Example change in members
+    amount: 200,   // Example number of members
   },
   {
-    title: "Expenses",
-    change: 18,
-    amount: 1216.5,
-  },
-  {
-    title: "Profit",
-    change: 12,
-    amount: 10125.0,
+    title: "Number of Members with Coaching",
+    change: 18,  // Example change in members with coaching
+    amount: 75,   // Example number of members with coaching
   },
 ];
 
+// Existing ordersData
 export const ordersData = [
   {
-    name: "Skatebnoard",
+    name: "Skateboard",
     type: "Illustration",
     items: 58,
     change: 290,
@@ -48,8 +44,7 @@ export const ordersData = [
     items: 21,
     change: 15
   }
-]
-
+];
 
 //* get the value in group number format
 export const groupNumber = (number) => {
@@ -58,16 +53,14 @@ export const groupNumber = (number) => {
   });
 };
 
-
 //* calendar Events
-let eventGuid = 0
-let todayStr = moment().format("YYYY-MM-DD")  // YYYY-MM-DD of today
+let eventGuid = 0;
+let todayStr = moment().format("YYYY-MM-DD"); // YYYY-MM-DD of today
 export const INITIAL_EVENTS = [
   {
     id: createEventId(),
-    title: 'Lunch Pary',
+    title: 'Lunch Party',
     start: todayStr + 'T09:00:00',
-
   },
   {
     id: createEventId(),
@@ -86,7 +79,7 @@ export const INITIAL_EVENTS = [
   },
   {
     id: createEventId(),
-    title: "Payment Shedules",
+    title: "Payment Schedules",
     start: moment(todayStr).add(5, "days").format("YYYY-MM-DD") + 'T13:00:00'
   },
   {
@@ -94,12 +87,11 @@ export const INITIAL_EVENTS = [
     title: "VC Meeting",
     start: moment(todayStr).add(6, "days").format("YYYY-MM-DD") + 'T13:00:00'
   },
-]
+];
 
 export function createEventId() {
-  return String(eventGuid++)
+  return String(eventGuid++);
 }
-
 
 // * tasks
 export const boardData = {
@@ -143,7 +135,7 @@ export const boardData = {
         {
           id: 11,
           title: "Custom Kanban Board",
-          description: "Setup react-kanban dep within Dashboard as seperate page"
+          description: "Setup react-kanban dep within Dashboard as separate page"
         }
       ]
     },
@@ -158,14 +150,13 @@ export const boardData = {
         },
         {
           id: 13,
-          title: "Modular structre",
+          title: "Modular structure",
           description: "Write css in form of modules to reduce the naming conflicts"
         }
       ]
     }
   ]
 }
-
 
 // * user table data
 export const userData = [
@@ -213,7 +204,8 @@ export const userData = [
     address: '32188 Larkin Turnpike',
     city: 'Charleston',
     state: 'South Carolina',
-  }, {
+  },
+  {
     name: {
       firstName: 'Jane',
       lastName: 'Doe',
@@ -249,4 +241,4 @@ export const userData = [
     city: 'Charleston',
     state: 'South Carolina',
   },
-]
+];

@@ -1,16 +1,17 @@
 :root {
-  --transparent-black: rgba(0, 0, 0, 0.294);
-  --black: #231f20;
-  /* Updated */
-  --grey: #ffffff;
-  /* Updated */
-  --orange: #fce715;
-  /* Updated */
-  --green: #052688;
-  /* Updated */
+  --transparent-white: rgba(255, 255, 255, 0.3);
+  /* Light transparent white */
+  --light-gray: #f5f5f5;
+  /* Light gray for background */
+  --medium-gray: #e0e0e0;
+  /* Medium gray */
+  --soft-orange: #ffa726;
+  /* Soft orange */
+  --soft-blue: #64b5f6;
+  /* Soft light blue */
   --orange-gradient: linear-gradient(268.35deg,
-      rgba(255, 70, 70, 0.99) 3.47%,
-      rgba(255, 114, 70, 0.99) 60.18%);
+      rgba(255, 183, 77, 0.99) 3.47%,
+      rgba(255, 223, 77, 0.99) 60.18%);
 }
 
 body {
@@ -25,15 +26,17 @@ body {
 #dashboard {
   height: 100vh;
   width: 100vw;
-  background-color: var(--black);
-  color: white;
-  /* Keep this as it is for text */
+  background-color: var(--light-gray);
+  /* Light background */
+  color: black;
+  /* Dark text for readability */
   font-family: "Public Sans", sans-serif;
   overflow: hidden;
 }
 
 .theme-container {
-  background: rgba(0, 0, 0, 0.59);
+  background: rgba(255, 255, 255, 0.8);
+  /* Light transparent white */
   border-radius: 20px;
   padding: 2rem;
 }
@@ -42,8 +45,8 @@ body {
   position: absolute;
   width: 200px;
   height: 200px;
-  background: #ff5d5d;
-  /* You can update this to a new color if desired */
+  background: #ff8a80;
+  /* Lighter red */
   filter: blur(90px);
 }
 
@@ -51,8 +54,8 @@ body {
   position: absolute;
   width: 200px;
   height: 200px;
-  background: var(--orange);
-  /* Updated to new orange */
+  background: var(--soft-orange);
+  /* Softer orange */
   filter: blur(90px);
 }
 
@@ -60,19 +63,29 @@ body {
   position: absolute;
   width: 200px;
   height: 200px;
-  background: #052688;
-  /* Updated to new blue */
+  background: var(--soft-blue);
+  /* Light blue */
   filter: blur(90px);
 }
 
 .grey-container {
-  border-top: 0.3px solid rgba(255, 255, 255, 0.185);
-  border-bottom: 0.3px solid rgba(255, 255, 255, 0.185);
+  border-top: 0.3px solid rgba(0, 0, 0, 0.1);
+  color: black;
+  /* Sets the text color to black */
+  /* Light borders */
+  border-bottom: 0.3px solid rgba(0, 0, 0, 0.1);
   background: linear-gradient(90deg,
-      rgba(53, 53, 53, 0) 1.21%,
-      rgba(53, 53, 53, 0.46) 49.45%,
-      rgba(53, 53, 53, 0) 103.83%);
+      rgba(230, 230, 230, 0) 1.21%,
+      rgba(230, 230, 230, 0.46) 49.45%,
+      rgba(230, 230, 230, 0) 103.83%);
+
 }
+
+.stat {
+  color: black;
+  /* Ensures text is black for elements with class 'stat' */
+}
+
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -81,10 +94,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  /* Lighter track shadow */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: grey;
   width: 5px;
 }

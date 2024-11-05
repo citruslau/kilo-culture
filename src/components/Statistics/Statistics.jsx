@@ -7,9 +7,9 @@ import StatisticsChart from '../StatisticsChart/StatisticsChart'
 const Statistics = () => {
     return (
         <div className={`${css.container} theme-container`}>
-            <span className={css.title}>Overview Statistics</span>
+            <span className={css.title}>Visualization</span>
 
-            <div className={`${css.cards} grey-container`}>
+            {/* <div className={`${css.cards} grey-container`}>
 
                 <div>
                     <div className={css.arrowIcon}>
@@ -22,20 +22,20 @@ const Statistics = () => {
                 </div>
 
                 <div className={css.card}>
-                    <span>Items</span><span>$ {groupNumber(455)}</span>
+                    <span>Number of Members</span><span>$ {groupNumber(200)}</span>
                 </div>
 
                 <div className={css.card}>
-                    <span>Profit</span><span>$ {groupNumber(370000)}</span>
+                    <span>Number of Members with Coaching</span><span>$ {groupNumber(75)}</span>
                 </div>
 
                 <div className={css.card}>
                     <span>Daily Average</span><span>$ {groupNumber(2000)}</span>
                 </div>
-            </div>
+            </div> */}
 
 
-            <StatisticsChart/>
+            <StatisticsChart />
         </div>
     )
 }

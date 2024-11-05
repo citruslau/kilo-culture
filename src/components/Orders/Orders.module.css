@@ -1,67 +1,77 @@
 .container {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.head {
+  position: relative;
+  width: 400px;
+  height: 725px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 0 3px #f0f0f0;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.head > img {
-  width: 2rem;
+
+.stylizedImage {
+  background-image: url('./kiloKultureBG.jpg');
+  /* Background image remains here */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
 }
-.stat {
-  padding: 0.5rem;
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.container:hover .stylizedImage {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  color: var(--grey);
-}
-.stat > :nth-child(1) {
-  font-size: 0.8rem;
-}
-.stat > :nth-child(2) {
-  font-size: 1.2rem;
-  font-weight: 500;
+  justify-content: center;
   color: white;
+  text-align: center;
+  z-index: 1;
+  pointer-events: none;
 }
 
-.orders {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
- gap: 1.5rem;
-}
-.order>div{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    color: var(--grey);
-    font-size: 0.85rem;
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.order>:nth-child(1)
-{
-    margin-bottom: 0.8rem;
-}
-.order>:nth-child(1)>:nth-child(1)
-{
-    font-size: 1rem;
-}
-.order>:nth-child(1)>:nth-child(2)
-{
-    font-size: 0.8rem;
-    color: var(--green);
-}
-.orderChart{
-    width: 100%;
-}
-.orderChart>:nth-child(1)
-{
-    text-align: center;
+.overlayText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0.9;
 }
 
+.container:hover .logo {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.overlayText {
+  position: relative;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+
+  to {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);
+  }
+}

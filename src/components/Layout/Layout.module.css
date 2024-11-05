@@ -1,42 +1,45 @@
 .container {
-  display: flex;
+    display: flex;
 }
 
 .dashboard {
-  position: relative;
-  width: 100%;
-  z-index: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    color: black;
+    /* Set to a darker color for a lighter background */
 }
 
 .topBaseGradients {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 20rem;
-  overflow: hidden;
-  z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20rem;
+    overflow: hidden;
+    z-index: -1;
 }
 
-.topBaseGradients>:nth-child(2)
-{
+.topBaseGradients>:nth-child(2) {
     left: 40%;
 }
-.topBaseGradients>:nth-child(3)
-{
+
+.topBaseGradients>:nth-child(3) {
     right: 0;
 }
-.header{
+
+.header {
     display: flex;
     padding: 2rem 4rem;
     align-items: center;
     justify-content: space-between;
 }
-.header>:nth-child(1)
-{
+
+.header>:nth-child(1) {
     font-size: 1.2rem;
 }
-.searchBar{
+
+.searchBar {
     background-color: rgba(255, 255, 255, 0.496);
     width: 30%;
     max-width: 25rem;
@@ -50,36 +53,39 @@
     gap: 8px;
 }
 
-.searchBar>input{
+.searchBar>input {
     background: transparent;
     color: white;
     outline: none;
     border: none;
-    padding: 0;width: 100%;
+    padding: 0;
+    width: 100%;
 }
-.profile{
+
+.profile {
     display: flex;
     gap: 1rem;
     align-items: center;
     justify-content: center;
 }
 
-.profile>img{
+.profile>img {
     height: 50px;
     width: 50px;
 }
-.details{
+
+.details {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.details>:nth-child(1)
-{
+.details>:nth-child(1) {
     font-size: 1rem;
     font-weight: bold;
 }
-.content{
+
+.content {
     margin: auto;
     display: flex;
     height: 100%;
@@ -87,8 +93,8 @@
     /* uncomment the aic, and make mt -4rem */
     margin-top: 4rem;
 }
-.content>div{
+
+.content>div {
     width: 100%;
     min-width: 75vh
 }
-

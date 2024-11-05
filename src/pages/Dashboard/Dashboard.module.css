@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   max-width: 130rem;
-  padding: 0rem 4rem;
+  padding: 0 4rem;
   display: flex;
   gap: 2rem;
 }
@@ -19,16 +19,20 @@
   gap: 2rem;
 }
 
-.dashboardHead > .head {
+.dashboardHead>.head {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.head > :nth-child(1) {
+
+.head> :nth-child(1) {
   font-size: 1.5rem;
   font-weight: 500;
+  color: black;
+  /* Ensure heading is visible */
 }
-.durationButton > select {
+
+.durationButton>select {
   border: none;
   background: var(--orange-gradient);
   padding: 10px;
@@ -42,39 +46,53 @@
   justify-content: space-between;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Light gray background for contrast */
+  padding: 1rem;
+  /* Padding to space text from edges */
+  border-radius: 8px;
+  /* Rounded corners */
 }
 
-.cardHead{
+.cardHead {
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cardHead>:nth-child(1)
-{
-  color: rgba(255, 255, 255, 0.835);
+.cardHead> :nth-child(1) {
+  color: black;
+  /* Card title color */
 }
 
-.cardHead>:nth-child(2){
+.cardHead> :nth-child(2) {
   margin-left: 1.5rem;
   font-size: 0.8rem;
   color: var(--green);
 }
 
-.cardAmount>:nth-child(1)
-{
+.cardAmount {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cardAmount> :nth-child(1) {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.776);
+  color: rgba(0, 0, 0, 0.8);
+  /* Change color to dark gray for better visibility */
   position: relative;
   bottom: 5px;
 }
 
-
-.cardAmount>:nth-child(2)
-{
+.cardAmount> :nth-child(2) {
   font-size: 1.5rem;
   font-weight: bold;
   margin-left: 8px;
+  color: black;
+  /* Ensure amount is visible */
 }
