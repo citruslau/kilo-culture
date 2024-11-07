@@ -18,17 +18,6 @@ const DataGrid = () => {
             accessorKey: "membershipType",
             header: "Membership Type",
         },
-<<<<<<< Updated upstream
-    ], []); 
-
-    const theme = useMemo(
-        () => createTheme({
-            palette: {
-                mode: "dark"
-            }
-        }), [] // Empty dependency array to ensure it only recomputes once
-    );
-=======
     ], []);
 
     const theme = useMemo(() =>
@@ -38,7 +27,6 @@ const DataGrid = () => {
             }
         })
         , []);
->>>>>>> Stashed changes
 
     return (
         <div className="table-container">
@@ -47,10 +35,6 @@ const DataGrid = () => {
             </ThemeProvider>
         </div>
     );
-<<<<<<< Updated upstream
 };
-=======
-}
->>>>>>> Stashed changes
 
 export default DataGrid;
