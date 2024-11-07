@@ -1,11 +1,27 @@
-.table-container{
+.modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.table-container {
     padding: 3rem 5rem;
 }
-.table-container>:nth-child(1)
-{
+
+.table-container > :nth-child(1) {
     border-radius: 10px!important;
-    overflow: hidden!important;;
+    overflow: hidden!important;
 }
-.MuiTableRow-root, .MuiTableCell-root{
+
+.MuiTableRow-root, .MuiTableCell-root {
     border: none!important;
 }
