@@ -186,14 +186,22 @@ export const userData = [
       firstName: 'Kevin',
       lastName: 'Vandy',
     },
+<<<<<<< Updated upstream
     membershipType: 'Monthly',
+=======
+    membershipType: 'Walk-in',
+>>>>>>> Stashed changes
   },
   {
     name: {
       firstName: 'Joshua',
       lastName: 'Rolluffs',
     },
+<<<<<<< Updated upstream
     membershipType: 'Walk-in',
+=======
+    membershipType: 'Monthly',
+>>>>>>> Stashed changes
   },
   {
     name: {
@@ -207,21 +215,33 @@ export const userData = [
       firstName: 'Joe',
       lastName: 'Doe',
     },
+<<<<<<< Updated upstream
     membershipType: 'Monthly',
+=======
+    membershipType: 'Walk-in',
+>>>>>>> Stashed changes
   },
   {
     name: {
       firstName: 'Kevin',
       lastName: 'Vandy',
     },
+<<<<<<< Updated upstream
     membershipType: 'Annual',
+=======
+    membershipType: 'Monthly',
+>>>>>>> Stashed changes
   },
   {
     name: {
       firstName: 'Joshua',
       lastName: 'Rolluffs',
     },
+<<<<<<< Updated upstream
     membershipType: 'Walk-in',
+=======
+    membershipType: 'Annual',
+>>>>>>> Stashed changes
   },
 ];
 
