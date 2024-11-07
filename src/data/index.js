@@ -165,80 +165,64 @@ export const userData = [
       firstName: 'John',
       lastName: 'Doe',
     },
-    address: '261 Erdman Ford',
-    city: 'East Daphne',
-    state: 'Kentucky',
+    membershipType: 'Walk-in',
   },
   {
     name: {
       firstName: 'Jane',
       lastName: 'Doe',
     },
-    address: '769 Dominic Grove',
-    city: 'Columbus',
-    state: 'Ohio',
+    membershipType: 'Monthly',
   },
   {
     name: {
       firstName: 'Joe',
       lastName: 'Doe',
     },
-    address: '566 Brakus Inlet',
-    city: 'South Linda',
-    state: 'West Virginia',
+    membershipType: 'Annual',
   },
   {
     name: {
       firstName: 'Kevin',
       lastName: 'Vandy',
     },
-    address: '722 Emie Stream',
-    city: 'Lincoln',
-    state: 'Nebraska',
+    membershipType: 'Monthly',
   },
   {
     name: {
       firstName: 'Joshua',
       lastName: 'Rolluffs',
     },
-    address: '32188 Larkin Turnpike',
-    city: 'Charleston',
-    state: 'South Carolina',
+    membershipType: 'Walk-in',
   },
   {
     name: {
       firstName: 'Jane',
       lastName: 'Doe',
     },
-    address: '769 Dominic Grove',
-    city: 'Columbus',
-    state: 'Ohio',
+    membershipType: 'Annual',
   },
   {
     name: {
       firstName: 'Joe',
       lastName: 'Doe',
     },
-    address: '566 Brakus Inlet',
-    city: 'South Linda',
-    state: 'West Virginia',
+    membershipType: 'Monthly',
   },
   {
     name: {
       firstName: 'Kevin',
       lastName: 'Vandy',
     },
-    address: '722 Emie Stream',
-    city: 'Lincoln',
-    state: 'Nebraska',
+    membershipType: 'Annual',
   },
   {
     name: {
       firstName: 'Joshua',
       lastName: 'Rolluffs',
     },
-    address: '32188 Larkin Turnpike',
-    city: 'Charleston',
-    state: 'South Carolina',
+    membershipType: 'Walk-in',
   },
 ];
+
+
